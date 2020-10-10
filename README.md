@@ -1,6 +1,9 @@
-# Project Sirius
+![image](https://user-images.githubusercontent.com/35392585/95647461-44a31f00-0aed-11eb-95b6-4c3f20654fb4.png)
 
-Mass certificate generation using various concepts Web Development. 
+
+# PROJECT SIRIUS
+
+End-to-end application for Mass certificate generation 
 
 
 ## 🤝 HOW TO CONTRIBUTE?
