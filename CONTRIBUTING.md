@@ -20,9 +20,8 @@ Below are the steps to be followed to contribute to the repository. Lets togethe
 
 Note : Your PR will only be approved if you are assigned to that issue. Also, every small project must have a associated issue for it.
 
-### 2. Fork and Setup the Project
+### 2. Setup the Project
 
-- Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. 
 - Clone the repository into your system using the below command
 
 ```
@@ -44,8 +43,8 @@ Create a new branch. Follow the branch creation rule.
 #### BRANCH CREATION RULE
 * Go to [this](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/issues) link and see the issues created by you or assigned to you.
 * Create a new branch for each issue in your forked repository.
-* The name of your branch should follow the following rule: **[ISSUE NO #]-[SUITABLE NAME ACCORDING TO THE TITLE OF THE ISSUE(all lowercase letters and words separated by a hyphen(-))]**.
-* That is, if the *TITLE* of the issue **#8** is **Login Form**, then the branch name should be **8-Login-Form**
+* The name of your branch should follow the following rule: **[Your Name #]-[Short Word According to Issue Assigned(all lowercase letters and words separated by a hyphen(-))]**.
+* That is, if the *Name* of the user **#Anshu** and issue assigned is **Login Form**, then the branch name should be **Anshu-Login-Form**
 
 ```
 $ git checkout -b branch_name
