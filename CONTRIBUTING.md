@@ -28,8 +28,7 @@ Note : Your PR will only be approved if you are assigned to that issue. Also, ev
 ```
 $ git clone https://github.com/<your-username>/<repo-name>
 ```
-Now, let's add a reference to the original [Repository](https://github.com/<CYBORG-NIT-ROURKELA
->/<project-sirius>) repository using
+Now, let's add a reference to the original [Repository](https://github.com/<CYBORG-NIT-ROURKELA>/<project-sirius>) repository using
 
 ```sh
 $ git remote add upstream https://github.com/<user-or-organisation-name>/<repo-name>.git
