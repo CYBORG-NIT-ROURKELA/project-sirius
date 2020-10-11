@@ -26,12 +26,12 @@ Note : Your PR will only be approved if you are assigned to that issue. Also, ev
 - Clone the repository into your system using the below command
 
 ```
-$ git clone https://github.com/<your-username>/<repo-name>
+$ git clone https://github.com/<your-username>/<project-sirius>
 ```
-Now, let's add a reference to the original [Repository](https://github.com/<CYBORG-NIT-ROURKELA>/<project-sirius>) repository using
+Now, let's add a reference to the original [Repository](https://github.com/CYBORG-NIT-ROURKELA/project-sirius) repository using
 
 ```sh
-$ git remote add upstream https://github.com/<user-or-organisation-name>/<repo-name>.git
+$ git remote add upstream https://github.com/CYBORG-NIT-ROURKELA/project-sirius.git
 ```
 
 > This adds a new remote named ***upstream***.
@@ -42,7 +42,7 @@ $ git remote add upstream https://github.com/<user-or-organisation-name>/<repo-n
 ### 3. Branch
 Create a new branch. Follow the branch creation rule. 
 #### BRANCH CREATION RULE
-* Go to [this](https://github.com/<CYBORG-NIT-ROURKELA>/<project-sirius>/issues) link and see the issues created by you or assigned to you.
+* Go to [this](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/issues) link and see the issues created by you or assigned to you.
 * Create a new branch for each issue in your forked repository.
 * The name of your branch should follow the following rule: **[ISSUE NO #]-[SUITABLE NAME ACCORDING TO THE TITLE OF THE ISSUE(all lowercase letters and words separated by a hyphen(-))]**.
 * That is, if the *TITLE* of the issue **#8** is **Login Form**, then the branch name should be **8-Login-Form**
