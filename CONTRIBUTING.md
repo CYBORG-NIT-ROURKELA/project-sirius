@@ -2,7 +2,7 @@
 
 We love contributions from everyone.
 By participating in this project,
-you agree to abide by the [code of conduct](https://github.com/<user-or-organisation-name>/<repo-name>/blob/master/CODE_OF_CONDUCT.md)
+you agree to abide by the [code of conduct](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/blob/master/CODE_OF_CONDUCT.md)
 
 We expect everyone to follow the code of conduct
 anywhere in this project codebases,
@@ -14,7 +14,7 @@ Below are the steps to be followed to contribute to the repository. Lets togethe
 
 ### 1. Find an issue or Create your own issue
 
-- Take a look at the Existing issues or create your own issues! [Link](https://github.com/<CYBORG-NIT-ROURKELA>/<project-sirius>/issues) 
+- Take a look at the Existing issues or create your own issues! [Link](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/issues) 
 - Comment on the issue.
 - Wait for the admin to assign the issue to you after which you can start working on it.
 
