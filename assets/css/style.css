@@ -3294,7 +3294,7 @@ ul.mailbox-list li:hover a, ul.h-list li:hover a {
 	font-size:14px;
 	color:#303030;
 }
-.form-group-inner input[type="email"], .form-group-inner input[type="password"], .form-group-inner input[type="text"], .form-select-list .custom-select-value{
+.form-group-inner input[type="email"], .form-group-inner input[type="password"], .form-group-inner input[type="text"], .form-group-inner input[type="date"], .form-group-inner input[type="number"], .form-group-inner textarea, .form-select-list .custom-select-value{
 	font-size:14px;
 	color:#303030;
 	border:1px solid #ddd;
@@ -3302,7 +3302,7 @@ ul.mailbox-list li:hover a, ul.h-list li:hover a {
 	border-radius:0px;
 	box-shadow: none;
 }
-.form-group-inner input[type="email"]:focus, .form-group-inner input[type="password"]:focus, .form-group-inner input[type="text"]:focus, .form-select-list .custom-select-value:focus{
+.form-group-inner input[type="email"]:focus, .form-group-inner input[type="password"]:focus, .form-group-inner input[type="text"]:focus, .form-group-inner input[type="date"]:focus,  .form-group-inner input[type="number"]:focus,  .form-group-inner textarea:focus, .form-select-list .custom-select-value:focus{
 	border:1px solid #e12503;
 	outline:none;
 	border-radius:0px;
