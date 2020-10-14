@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Ashu-strange",
+      "name": "Ashu-strange",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/64271921?v=4",
+      "profile": "https://github.com/Ashu-strange",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "project-sirius",
+  "projectOwner": "CYBORG-NIT-ROURKELA",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
