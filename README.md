@@ -44,9 +44,6 @@ You can go through the following links to know more about using Git and GitHub.
 - [GitHub Commits](https://docs.github.com/en/github/committing-changes-to-your-project)
 
 
-## 💪 CONTRIBUTORS
-
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
