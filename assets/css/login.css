@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #152036;
+}
+#loginForm {
+  color: white;
+}
+.login-heading {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+.login-heading p {
+  font-size: 3em;
+  color: white;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  width: 40%;
+  background-color: #1b2a47;
+}
+.form-content {
+  padding: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.form-field input {
+  border: none;
+  outline: none;
+  height: 35px;
+  padding: 0 10px;
+  background-color: #152036;
+  color: rgb(224, 224, 224);
+}
+.form-field input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.form-field button {
+  width: 50%;
+  padding: 10px 20px;
+  background-color: #152036;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 15px;
+}
+.form-field button:hover {
+  background-color: #0f1625;
+}
+
+.form-field-checkbox {
+  display: flex;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.form-field-checkbox input {
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
