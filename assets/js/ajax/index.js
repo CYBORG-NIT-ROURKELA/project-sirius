@@ -6,7 +6,6 @@ $("#loginForm").on('submit', (function(e) {
 const validateLoginForm = () => {
     const loginEmail = document.getElementById("email");
     const loginPassword = document.getElementById("password");
-    console.log("entered");
 
     //EMAIL VALIDATIONS
     if (loginEmail.value == "") {

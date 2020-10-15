@@ -6,7 +6,7 @@ $('#signoutBtn').click(() => {
         success: (response) => {
             response = JSON.parse(response);
             swal("Logged out!", "", "success");
-            window.location = '../index.html';
+            window.location = 'views/login.html';
         }
     });
 })

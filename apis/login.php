@@ -22,13 +22,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST" ){
                   $_SESSION['Email']=$query_row['email'];
                   $admin_id = $_SESSION['admin_id'];
                   $basicInfo=[];
-                  
-                 
-                 $query = mysqli_query($con, "SELECT * FROM admin where admin_id ='".$admin_id."'");
-                  if (mysqli_num_rows($query) == 0) {
+                  if (mysqli_num_rows($query1_run) == 0) {
                       return json_encode(array('status' => 'failure', 'result' => 'User ID not found'));
                   } else {
-                      $basicInfo = mysqli_fetch_array($query,MYSQLI_ASSOC);           
+                      $basicInfo = mysqli_fetch_array($query1_run,MYSQLI_ASSOC);           
                   }
    
                   echo json_encode(array('status' => 'success', 'result' => $basicInfo));

@@ -14,7 +14,7 @@ $(document).ready(function() {
             },
             type: 'POST',
             success: function(response) {
-                console.log((response));
+                // console.log((response));
 
                 var res = JSON.parse(response);
                 if (res.status == "success") {
