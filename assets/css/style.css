@@ -299,6 +299,15 @@ ul.dtl-social li a{
 	color:#fff;
 	text-decoration:none;
 }
+.myFooter{
+	text-align: center;
+	padding: 20px;
+	color: #fff;	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	}
 /*----------------------------------------*/
 /*  8. Scroll Area
 /*----------------------------------------*/
