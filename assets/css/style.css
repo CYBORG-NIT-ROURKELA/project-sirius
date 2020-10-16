@@ -139,6 +139,10 @@ body {}
     display: none;
     font-size: 1.8em;
 }
+.sidebar-header img {
+	height: 100px;
+	width: 150px;
+}
 .nalika-profile {
     padding: 20px;
 	position: relative;
@@ -379,6 +383,13 @@ ul.dtl-social li a{
 /*----------------------------------------*/
 /*  3.  Header top Menu CSS
 /*----------------------------------------*/
+
+.logo-pro img{
+	width: 70px;
+	height: 50px;
+}
+
+
 .admin-logo{
 	padding:10px 0px;
 }
