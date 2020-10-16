@@ -139,6 +139,10 @@ body {}
     display: none;
     font-size: 1.8em;
 }
+.sidebar-header img {
+	height: 100px;
+	width: 150px;
+}
 .nalika-profile {
     padding: 20px;
 	position: relative;
@@ -299,6 +303,15 @@ ul.dtl-social li a{
 	color:#fff;
 	text-decoration:none;
 }
+.myFooter{
+	text-align: center;
+	padding: 20px;
+	color: #fff;	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	}
 /*----------------------------------------*/
 /*  8. Scroll Area
 /*----------------------------------------*/
@@ -370,6 +383,13 @@ ul.dtl-social li a{
 /*----------------------------------------*/
 /*  3.  Header top Menu CSS
 /*----------------------------------------*/
+
+.logo-pro img{
+	width: 70px;
+	height: 50px;
+}
+
+
 .admin-logo{
 	padding:10px 0px;
 }
