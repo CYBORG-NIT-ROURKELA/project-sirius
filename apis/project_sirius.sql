@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 15, 2020 at 03:26 PM
+-- Generation Time: Oct 17, 2020 at 05:28 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -58,8 +58,16 @@ CREATE TABLE `template_preview` (
   `x_coordinate` int(11) NOT NULL,
   `y_coordinate` int(11) NOT NULL,
   `font_type` varchar(50) NOT NULL,
+  `template_image` varchar(255) NOT NULL,
   `admin_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `template_preview`
+--
+
+INSERT INTO `template_preview` (`id`, `font_size`, `font_color`, `x_coordinate`, `y_coordinate`, `font_type`, `template_image`, `admin_fk`) VALUES
+(1, 100, '0,0,0', 950, 950, 'TimesNewRoman', 'Naina_1.png', 1);
 
 -- --------------------------------------------------------
 
@@ -115,7 +123,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `template_preview`
 --
 ALTER TABLE `template_preview`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
