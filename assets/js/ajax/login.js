@@ -3,10 +3,7 @@ $(document).ready(function() {
         e.preventDefault();
         var loginEmail = $("#email").val();
         var loginPassword = $("#password").val();
-
-
         $.ajax({
-
             url: '../apis/login.php',
             data: {
                 loginEmail: loginEmail,
@@ -15,12 +12,11 @@ $(document).ready(function() {
             type: 'POST',
             success: function(response) {
                 // console.log((response));
-
                 var res = JSON.parse(response);
                 if (res.status == "success") {
                     // alert(res.message);
                     swal('Login Successfull!', '', 'success').then((value) => {
-                        window.location = '../index.html';
+                        window.location = '../views/admin.html';
                     });
                 } else {
                     swal(res.message, '', 'error');
