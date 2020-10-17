@@ -58,15 +58,6 @@ function validateName($name){
     return 1;
 }
 
-function validatepassword($pass){
-    if($pass==""){
-        echo(json_encode(array('status'=>'failure','message'=>'Password Details is needed')));
-    return 0;
-
-    }
-    return 1;
-}
-
 
 function validatePhone($phone) {
     if ($phone == '') {
@@ -83,32 +74,27 @@ function validatePhone($phone) {
 }
 
 
-        
+   if (isset($_SESSION['logged_in'])&& isset($_SESSION['admin_id']))
+    { 
         $name=$_POST['name'];
         $email=$_POST['email'];
-        $pass=$_POST['pass'];
         $contact_number=$_POST['contact_number'];
         $event_dsc = $_POST['event_dsc'];
         $event_name = $_POST['event_name'];
         $event_date = $_POST['event_date'];
         $event_org = $_POST['event_org'];
+        $admin_id = $_SESSION['admin_id'];
 
 
-        if(validateName($name) && validatePhone($contact_number) && validateemail($email) && validatepassword($pass) && validateevent_name($event_name) && validateevent_dsc($event_dsc) &&  validateevent_date($event_date) &&  validateevent_org($event_org))
+        if(validateName($name) && validatePhone($contact_number) && validateemail($email) && validateevent_name($event_name) && validateevent_dsc($event_dsc) &&  validateevent_date($event_date) &&  validateevent_org($event_org))
         {
         $query1=mysqli_query($con,"SELECT * from admin where email='$email'");
         $count=mysqli_num_rows($query1);
         if($count!=0)
         {
-            echo(json_encode(array('status'=>'failure','message' => 'Email ID Present')));
-        }
-        else
-        {
-        $pass=hash('sha512', $pass);
-        $q = "INSERT INTO admin(name, email, password, contact, event_name, event_description, event_date, event_organiser) VALUES ('".$name."','".$email."','".$pass."','".$contact_number."','".$event_name."','".$event_dsc."','".$event_date."','".$event_org."')";
-                
-        $query = mysqli_query($con, $q);
-        if ($query)
+            $query = mysqli_query($con, "UPDATE admin SET name='$name',email='$email',contact='$contact_number',event_name='$event_name',event_description='$event_dsc',event_date='$event_date',event_organiser='$event_org' WHERE  email ='".$email."'");
+             
+              if ($query)
         {
             echo(json_encode(array('status'=>'success','message' => 'Validation success')));
         }
@@ -116,12 +102,23 @@ function validatePhone($phone) {
         {
              echo(json_encode(array('status'=>'failure','message' => 'Error in updating value')));
         }
-        
         }
+        else
+        {
+             echo(json_encode(array('status'=>'failure','message' => 'Wrong Email Entry')));
+        }
+        
+        
     }
          else
         {
              
+        }
+    }
+
+        else
+        {
+           echo(json_encode(array('status'=>'failure','message' => 'Error in updating value1')));
         }
 
 
