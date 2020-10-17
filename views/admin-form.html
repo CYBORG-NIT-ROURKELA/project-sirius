@@ -935,7 +935,7 @@
                                                                 <label class="login2 pull-right pull-right-pro">Name</label>
                                                             </div>
                                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                                <input type="text" class="form-control" />
+                                                                <input type="text" class="form-control" id="name" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -945,7 +945,17 @@
                                                                 <label class="login2 pull-right pull-right-pro">Email ID</label>
                                                             </div>
                                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                                <input type="text" class="form-control" />
+                                                                <input type="text" class="form-control" id="email_id" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-inner">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                                <label class="login2 pull-right pull-right-pro">Password</label>
+                                                            </div>
+                                                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                                <input type="password" class="form-control" id="pass"/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -955,7 +965,7 @@
                                                                 <label class="login2 pull-right pull-right-pro">Contact Number</label>
                                                             </div>
                                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                                <input type="number" class="form-control" />
+                                                                <input type="number" class="form-control" id="contact_number" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -965,7 +975,7 @@
                                                                 <label class="login2 pull-right pull-right-pro">Event Name</label>
                                                             </div>
                                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                                <input type="text" class="form-control" />
+                                                                <input type="text" class="form-control" id="event_name"/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -976,7 +986,7 @@
                                                             </div>
                                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                                                 <div class="form-select-list">
-                                                                    <textarea style="width: 100%; color: white;  background-color:#152036;" rows="10"></textarea>
+                                                                    <textarea style="width: 100%; color: white;  background-color:#152036;" rows="10" id="event_dsc"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -987,7 +997,7 @@
                                                                 <label class="login2 pull-right pull-right-pro">Event Date</label>
                                                             </div>
                                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                                <input style="color: white;" type="date" class="form-control" />
+                                                                <input style="color: white;" type="date" class="form-control" id="event_date"/>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -998,7 +1008,7 @@
                                                             </div>
                                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                                                 <div class="form-select-list">
-                                                                    <input type="text" class="form-control" />
+                                                                    <input type="text" class="form-control" id="event_org" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1010,7 +1020,7 @@
                                                                 <div class="col-lg-3"></div>
                                                                 <div class="col-lg-9">
                                                                     <div class="login-horizental cancel-wp pull-left">
-                                                                        <button class="btn btn-sm btn-primary login-submit-cs" type="submit">Submit</button>
+                                                                        <button class="btn btn-sm btn-primary login-submit-cs" id="enter" type="submit">Submit</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1086,6 +1096,8 @@
     <!-- main JS
         ============================================ -->
     <script src="../assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../assets/js/ajax/register.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ $(document).ready(function() {
                 if (res.status == "success") {
                     // alert(res.message);
                     swal('Login Successfull!', '', 'success').then((value) => {
-                        window.location = '../index.html';
+                        window.location = '../views/basic-form-element.html';
                     });
                 } else {
                     swal(res.message, '', 'error');
