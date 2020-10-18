@@ -16,7 +16,7 @@ $(document).ready(function() {
                 if (res.status == "success") {
                     // alert(res.message);
                     swal('Login Successfull!', '', 'success').then((value) => {
-                        window.location = '../views/Admin-dashboard.html';
+                        window.location = '../views/dashboard.html';
                     });
                 } else {
                     swal(res.message, '', 'error');
