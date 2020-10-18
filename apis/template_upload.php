@@ -44,6 +44,8 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))
                                 $query = mysqli_query($con, $q);
 
 		                        if($query){
+                                    
+                                    move_uploaded_file($_FILES["file"]["tmp_name"],$path.$filename);
 			                        echo(json_encode(array('status' => 'success', 'result' => "Template uploaded")));
 		                        }
 		                        else

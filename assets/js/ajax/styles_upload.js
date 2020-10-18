@@ -81,7 +81,7 @@ function show_certificate() {
         type: 'GET',
         success: function(response) {
             var response = JSON.parse(response);
-            //console.log(response.result)
+            // console.log(response.result)
             if (response.status == 'success') {
                 document.getElementById("previewing").src = "../assets/img/certificates/" + response.result + ".jpg";
             }
