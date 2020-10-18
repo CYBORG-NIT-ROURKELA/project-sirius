@@ -5,7 +5,7 @@ $.ajax({
         // console.log(response);
         response = JSON.parse(response);
         if (response.status == "success") {
-            console.log(response.result);
+            // console.log(response.result);
             $('.user_name').html("welcome" + response.result.name + ":)");
         } else {
             swal('Login to continue!', '', 'error').then((value) => {
