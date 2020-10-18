@@ -11,7 +11,7 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))
                 echo(json_encode(array('status'=>'error','message' => 'Please fille the event form','result'=>'1')));
             }else{
                     if (isset($_FILES["file"]["name"])) {
-                        $extension = array('jpg', 'jpeg', 'png' ,'bmp' ,'tiff' ,'gif', 'svg');
+                        $extension = array('jpg', 'jpeg', 'png' );
                         $errors = array();
                         $path = "../assets/img/templates/";
                         $uploadThisFile = true;
@@ -30,11 +30,17 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))
                             $r = mysqli_query($con, $q);
                             $row = mysqli_fetch_array($r,MYSQLI_ASSOC);
                             $name = $row["name"];
-                            $oip=strval($name)."_".strval($admin_id).".".$ext; 
-                            $ImagePath ="../assets/img/templates/".$oip;
-                            if(file_exists($ImagePath))
+                            $oip1=strval($name)."_".strval($admin_id).".jpg"; 
+                            $oip2=strval($name)."_".strval($admin_id).".jpeg"; 
+                            $oip3=strval($name)."_".strval($admin_id).".png"; 
+                            $ImagePath ="../assets/img/templates/";
+                            if(file_exists($ImagePath.$oip1))
                             { 
-                                unlink($path.$oip);
+                                unlink($path.$oip1);
+                            }else if(file_exists($ImagePath.$oip2)){
+                                unlink($path.$oip2);
+                            }else if(file_exists($ImagePath.$oip3)){
+                                unlink($path.$oip3);
                             }
                             $filename=strval($name)."_".strval($admin_id).".".$ext;
                             // $filepath=$path.$filename;

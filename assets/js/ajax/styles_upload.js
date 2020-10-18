@@ -83,7 +83,9 @@ function show_certificate() {
             var response = JSON.parse(response);
             // console.log(response.result)
             if (response.status == 'success') {
-                document.getElementById("previewing").src = "../assets/img/certificates/" + response.result + ".jpg";
+
+                $("#previewing").attr("src", "../assets/img/certificates/" + response.result + ".jpg?" + new Date().getTime());
+                // document.getElementById("previewing").src = "../assets/img/certificates/" + response.result + ".jpg";
             }
         }
     })
