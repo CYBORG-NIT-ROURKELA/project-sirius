@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 17, 2020 at 05:28 PM
+-- Generation Time: Oct 17, 2020 at 08:41 PM
 -- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.6
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -32,6 +33,7 @@ CREATE TABLE `admin` (
   `name` tinytext NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` tinytext NOT NULL,
+  `contact` text NOT NULL,
   `event_name` varchar(255) NOT NULL,
   `event_description` longtext NOT NULL,
   `event_date` varchar(150) NOT NULL,
@@ -42,8 +44,9 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`admin_id`, `name`, `email`, `password`, `event_name`, `event_description`, `event_date`, `event_organiser`) VALUES
-(1, 'Naina', 'nc@gmail.com', 'd371b9b4f429e33cc0b938f10f9dc5685b6a119a2847c6168ede044f07fbb8b9300fde0f414f14a821a0f5ad800d31443262ad3ff9b78e949fc2cff4b00e61f1', '', '', '', '');
+INSERT INTO `admin` (`admin_id`, `name`, `email`, `password`, `contact`, `event_name`, `event_description`, `event_date`, `event_organiser`) VALUES
+(1, 'Naina', 'nc@gmail.com', 'd371b9b4f429e33cc0b938f10f9dc5685b6a119a2847c6168ede044f07fbb8b9300fde0f414f14a821a0f5ad800d31443262ad3ff9b78e949fc2cff4b00e61f1', '0', '', '', '', ''),
+(4, 'Ashutosh lala', 'anshusandhi@gmail.com', 'af2ad964e44136a0e441828878a9274b6a0b80585b9e414453e49d39f9dcbb5ba84d86fb072c2c42c58848836b21b2e7a03faa0a44bb8aea06f0aca6c3fbd615', '9556861910', 'aa', '', '2020-10-10', 'a11');
 
 -- --------------------------------------------------------
 
@@ -86,6 +89,14 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `rating`, `comments_abt_event`, `suggestions`, `admin_fk`) VALUES
+(1, 'abcs', 'anshusandhi6@gmail.com', '1', 'dsdsds', 'sdsds', 0),
+(4, 'abcs', 'anshusandhi61@gmail.com', '1', 'asss', 'ssas', 0);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -106,8 +117,7 @@ ALTER TABLE `template_preview`
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`),
-  ADD KEY `admin_fk` (`admin_fk`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -117,7 +127,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `template_preview`
@@ -129,7 +139,7 @@ ALTER TABLE `template_preview`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
@@ -140,12 +150,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `template_preview`
   ADD CONSTRAINT `template_preview_ibfk_1` FOREIGN KEY (`admin_fk`) REFERENCES `admin` (`admin_id`);
-
---
--- Constraints for table `user`
---
-ALTER TABLE `user`
-  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`admin_fk`) REFERENCES `admin` (`admin_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
