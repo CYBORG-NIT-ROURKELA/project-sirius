@@ -13,7 +13,7 @@ jobs:
             github.issues.createComment({
               ...context.repo,
               issue_number: context.payload.pull_request.number,
-              body: ` @${{ github.actor }} Thank you so very much for contributing! Your pull request has been merged 🎉 Hoping for more contribution from you in future. 
+              body: ` Thank you so very much for contributing! Your pull request has been merged 🎉 Hoping for more contribution from you in future. 
               Do give a ⭐ if you like this project
               
               Happy hacking and Learning ✌🤟
