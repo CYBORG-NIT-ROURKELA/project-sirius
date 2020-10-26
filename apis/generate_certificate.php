@@ -2,7 +2,7 @@
 
 session_start();
 include 'db.php';
-if (isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))
+if ((isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))||(isset($_SESSION['admin_id'])&&isset($_SESSION['name'])))
     { 
         $admin_id = $_SESSION['admin_id'];
         $name = $_SESSION['name'];
