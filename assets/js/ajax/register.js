@@ -1,4 +1,4 @@
-$("#enter").click(function (event) {
+$("#enter").click(function(event) {
     event.preventDefault();
     var name = $("#name").val();
     var email = $("#email_id").val();
@@ -21,12 +21,12 @@ $("#enter").click(function (event) {
         type: "POST",
         contentType: false,
         processData: false,
-        success: function (response) {
+        success: function(response) {
             console.log((response));
             var res = JSON.parse(response);
             if (res.status == "success") {
                 swal('Successfully Added', '', 'success').then((value) => {
-                    window.location = '../views/Admin-dashboard.html';
+                    window.location = '../views/admin.html';
                 });
             } else {
                 swal(res.message, '', 'error');

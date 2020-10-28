@@ -2,9 +2,15 @@
 
 session_start();
 include 'db.php';
-if (isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))
+if ((isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))||(isset($_SESSION['user_id'])&&isset($_SESSION['name'])))
     { 
-        $admin_id = $_SESSION['admin_id'];
+        if(isset($_SESSION['admin_id']) && isset($_SESSION['logged_in'])){
+            $id = $_SESSION['admin_id'];
+            $admin_id = $_SESSION['admin_id'];
+        }else if(isset($_SESSION['user_id'])){
+            $id = $_SESSION['user_id'];
+            $admin_id = $_SESSION['admin_id'];
+        }
         $name = $_SESSION['name'];
         $query = mysqli_query($con, "SELECT * FROM template_preview WHERE admin_fk='".$admin_id."'");
         if($query)
@@ -34,7 +40,7 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))
                 
                 $color = imagecolorallocate($image, $colors[0], $colors[1], $colors[2]);
                 imagettftext($image, $fontSize, $textAngle, $xCoordinate, $yCoordinate, $color, $font, $name);
-                $file = $name."_".$admin_id;
+                $file = $name."_".$id;
                 imagejpeg($image, "../assets/img/certificates/" . $file . ".jpg");
                 imagedestroy($image);
                 $_SESSION['certificate'] = "../assets/img/certificates/" . $file . ".jpg";

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'db.php';
 function validaterating($rating)
 {
@@ -71,11 +72,16 @@ $comment_abt_event = $_POST['comment_abt_event'];
 
 if (validateName($name_user) && validaterating($rating) && validatesuggestions($suggestions) && validatecomments($comment_abt_event))
 {
-    $query2 = mysqli_query($con, "SELECT * from user where email='$email_id'");
+    $query2 = mysqli_query($con, "SELECT * from user where email='".$email_id."'");
     $count1 = mysqli_num_rows($query2);
     if ($count1 != 0)
     {
         $q1 = mysqli_query($con, "UPDATE user SET rating='$rating',comments_abt_event='$comment_abt_event',suggestions='$suggestions' WHERE  email ='" . $email_id . "'");
+        $query_row = mysqli_fetch_array($query2,MYSQLI_ASSOC);
+        $_SESSION['name']=$query_row['user_name'];
+        $_SESSION['user_id']=$query_row['user_id'];
+        $_SESSION['Email']=$query_row['email'];
+        $_SESSION['admin_id']=$query_row['admin_fk'];
         if ($q1)
         {
             echo (json_encode(array(
@@ -87,7 +93,7 @@ if (validateName($name_user) && validaterating($rating) && validatesuggestions($
         {
             echo (json_encode(array(
                 'status' => 'failure',
-                'message' => 'Tey Again'
+                'message' => 'Try Again'
             )));
         }
     }
