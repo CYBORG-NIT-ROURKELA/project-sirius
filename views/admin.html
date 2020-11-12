@@ -433,15 +433,21 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="review-tab-pro-inner">
                                         <ul id="myTab3" class="tab-review-design">
-                                            <div id="admin-table" class="container-fluid" style="display: none;overflow-x: auto;">
+                                            <div id="admin-table" class="container-fluid" style="overflow-x: auto;">
                                                 <div class="btn-group images-cropper-pro">
                                                     <label class="btn btn-primary img-cropper-cp">
 
-                                                        <input type="file" accept="xlsx/*" name="file" class="hide">
+                                                        <input type="file" name="filename" class="hide" id="myFile3">
                                                         Upload
                                                     </label>
+                                                    
 
-                                                        <div class="button-style-two btn-mg-b-10" style="text-align:  right;">
+                                                        <div class="button-style-two btn-mg-b-10" style="text-align:  center;">
+                                                             <label class="btn btn-primary img-cropper-cp">
+
+                                                        <input type="submit" name="submit" class="hide" id="confirmation">
+                                                        Submit
+                                                    </label>
                                                             <button type="button" class="btn btn-custon-two btn-success"><i
                                                                 class="fa adminpro-checked-pro" aria-hidden="true"></i>
                                                             Download
@@ -452,8 +458,10 @@
                                                             Mail
                                                             all</button>
 
- <table role="table" class="table table-bordered">
-                                                                <thead  style="color: blue">
+
+ 
+ <table role="table" class="table table-bordered center" id="tbval1">
+                                                                <thead id="tbval" style="color: #89eb34">
                                                                     <tr >
                                                                         <th>Name
                                                                         </th>
@@ -466,66 +474,11 @@
                                                                         </th>
                                                                     </tr>
                                                                 </thead>
-                                                                <tbody>
-                                                                    <tr  style="color: #89eb34">
-                                                                        <td>John doe
-                                                                        </td>
-
-                                                                        <td>john@example.com
-                                                                        </td>
-                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
-
-                                                                                    class="fa adminpro-checked-pro"
-                                                                                    aria-hidden="true"></i>
-                                                                                Download
-                                                                            </button>
-                                                                            </td>
-                                                                            <td> <button type="button" class="btn btn-custon-two btn-warning"><i
-                                                                                    class="fa  adminpro-warning-danger"
-                                                                                    aria-hidden="true"></i>
-                                                                                Mail
-                                                                            </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr style="color: #89eb34">
-                                                                            <td>Mary caom
-                                                                            </td>
-
-                                                                            <td>mary@example.com
-                                                                            </td>
-                                                                            <td> <button type="button" class="btn btn-custon-two btn-success"><i
-                                                                                    class="fa adminpro-checked-pro"
-                                                                                    aria-hidden="true"></i>
-                                                                                Download
-                                                                            </button>
-                                                                            </td>
-                                                                            <td> <button type="button" class="btn btn-custon-two btn-warning"><i
-                                                                                    class="fa  adminpro-warning-danger"
-                                                                                    aria-hidden="true"></i>
-                                                                                Mail
-                                                                            </button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr style="color: #89eb34">
-                                                                            <td>July dora
-                                                                            </td>
-
-                                                                            <td>july@example.com
-                                                                            </td>
-                                                                            <td> <button type="button" class="btn btn-custon-two btn-success"><i
-                                                                                    class="fa adminpro-checked-pro"
-                                                                                    aria-hidden="true"></i>
-                                                                                Download
-                                                                            </button>
-                                                                            </td>
-                                                                            <td> <button type="button" class="btn btn-custon-two btn-warning"><i
-                                                                                    class="fa  adminpro-warning-danger"
-                                                                                    aria-hidden="true"></i>
-                                                                                Mail
-                                                                            </button>
-                                                                            </td>
-                                                                        </tr>
-
+                                                                <tbody id="data" style="color: #89eb34">
+                                                                    <tr style="color: #89eb34">
+                                                                        
+                                                                    </tr>
+                                                                    
 
                                                                     </tbody>
                                                                 </table>
@@ -626,6 +579,8 @@
             <script src="../assets/js/ajax/template_upload.js"></script>
             <script src="../assets/js/ajax/validate.js"></script>
             <script src="../assets/js/ajax/styles_upload.js"></script>
+            <script src="../assets/js/ajax/sheet_upload.js"></script>
+            <script src="../assets/js/ajax/table_content.js"></script>
             <script src="../assets/js/ajax/logout.js"></script>
 
 
