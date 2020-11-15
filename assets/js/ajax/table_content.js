@@ -105,7 +105,7 @@ $("#download_all").click(function(event) {
 
                             }
                         });
-                        console.log(urls);
+                        
                         var nombre = "Zip_img";
                         //The function is called
                         compressed_img(urls, nombre);
@@ -115,20 +115,22 @@ $("#download_all").click(function(event) {
                             var count = 0;
                             var name = nombre + ".zip";
                             urls.forEach(function(url) {
-                                console.log("2");
+                                
                                 JSZipUtils.getBinaryContent(url, function(err, data) {
                                     if (err) {
                                         throw err;
                                     }
-                                    zip.file(url, data, {
+                                    zip.file(url.split("img/")[1], data, {
                                         binary: true
                                     });
                                     count++;
+                                    console.log(url.split("img/")[1]);
                                     if (count == urls.length) {
                                         zip.generateAsync({
                                             type: 'blob'
                                         }).then(function(content) {
                                             saveAs(content, name);
+
                                         });
                                     }
                                 });

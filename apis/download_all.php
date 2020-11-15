@@ -66,18 +66,10 @@ if ((isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))||(isset($_SE
             }
 
         }
-        
-         
-        
-            
-        
 }
 else
 {
 	echo(json_encode(array('status'=>'error','result' => 'Login to continue')));
 }
-
-
-
 
 ?>
