@@ -15,7 +15,7 @@ $.ajax({
       document.getElementById("eventd").innerHTML = response.result.event_date;
       document.getElementById("evento").innerHTML =
         response.result.event_organiser;
-      console.log(response.result.name.length);
+      console.log(response.result.event_description);
       if (
         response.result.name == "" ||
         response.result.contact == "" ||

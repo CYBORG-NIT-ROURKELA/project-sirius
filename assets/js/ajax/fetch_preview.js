@@ -4,7 +4,7 @@ function fetch_complete_details() {
         type: 'GET',
         success: function(response) {
             var response = JSON.parse(response);
-            //console.log(response.result)
+            console.log(response.result)
             if (response.status == 'success') {
                 show_details(response);
             }

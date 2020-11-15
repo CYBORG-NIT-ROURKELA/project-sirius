@@ -115,7 +115,7 @@ if (isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))
     } 
     else 
     {
-        echo (json_encode(array('status' => 'failure', 'message' => 'Validation failed')));
+        
     }
 } 
 else 
