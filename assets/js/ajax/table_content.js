@@ -3,7 +3,8 @@ function fetch_complete_details4() {
         url: "../apis/table_data.php",
         type: "GET",
         success: function(response) {
-            if (response.length == 0) {
+            var response1 = JSON.parse(response);
+            if (response1.result.length == 0) {
                 console.log("Empty");
             } else {
                 var response = JSON.parse(response);

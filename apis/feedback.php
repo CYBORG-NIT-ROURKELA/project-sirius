@@ -74,6 +74,8 @@ if (validateName($name_user) && validaterating($rating) && validatesuggestions($
 {
     $query2 = mysqli_query($con, "SELECT * from user where email='".$email_id."'");
     $count1 = mysqli_num_rows($query2);
+    $row3 = mysqli_fetch_assoc($query2);
+    $unique_id=$row3['unique_id'];
     if ($count1 != 0)
     {
         $q1 = mysqli_query($con, "UPDATE user SET rating='$rating',comments_abt_event='$comment_abt_event',suggestions='$suggestions' WHERE  email ='" . $email_id . "'");
@@ -86,7 +88,7 @@ if (validateName($name_user) && validaterating($rating) && validatesuggestions($
         {
             echo (json_encode(array(
                 'status' => 'success',
-                'message' => 'Thank you very much'
+                'message' => $unique_id
             )));
         }
         else

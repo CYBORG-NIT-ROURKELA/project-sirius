@@ -42,15 +42,16 @@ function validatesuggestions($suggestions)
 }
 
 
-$email_id = $_POST['email_id'];
+$unique_id = $_POST['unique_id'];
 
 
-    $query2 = mysqli_query($con, "SELECT * from user where email='".$email_id."'");
+    $query2 = mysqli_query($con, "SELECT * from user where unique_id='".$unique_id."'");
     $count1 = mysqli_num_rows($query2);
     if ($count1 != 0)
     {
         $row1 = mysqli_fetch_assoc($query2);
         $admin_id=$row1['admin_fk'];
+        $email_id=$row1['email'];
         $id=$admin_id;
         $name=$row1['user_name'];
         $rating=$row1['rating'];

@@ -1,9 +1,9 @@
 var file_name=" ";
 $("#enter").click(function(event) {
     event.preventDefault();
-    var email_id = $("#user_email").val();
+    var unique_id = $("#user_email").val();
     var fd2 = new FormData();
-    fd2.append("email_id", email_id);
+    fd2.append("unique_id",unique_id);
     $.ajax({
         url: '../apis/check.php',
         data: fd2,
