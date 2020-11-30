@@ -21,8 +21,8 @@ $("#submitted").click(function(event) {
             console.log((response));
             var res = JSON.parse(response);
             if (res.status == "success") {
-                swal('Successfully Added', '', 'success').then((value) => {
-                    window.location = '../views/certificate page.html';
+                swal(res.message, 'Apply this unique id in your form and get the cerificate', 'success').then((value) => {
+                    window.location = '../views/certificate_view.html';
                 });
             } else {
 
