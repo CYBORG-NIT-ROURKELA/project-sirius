@@ -27,7 +27,13 @@ session_start();
 					$query2 = mysqli_query($con, "SELECT * from admin where admin_id='".$user_id."'");
 					$row1 = mysqli_fetch_assoc($query2);
 					$unique_id1=$row1['event_name'];
-					$c = $name."_".$unique_id1;
+					$pieces = explode(" ", $unique_id1);
+                    $pieces1 = explode(" ", $name);
+
+					$q=$pieces1[0];
+					$q1=$pieces[0];
+
+					$c = $q."_".$q1;
 					mysqli_query($con,"insert into user(unique_id,user_name,email,admin_fk) values('$c','$name','$email',$user_id)");
 					
 				}
