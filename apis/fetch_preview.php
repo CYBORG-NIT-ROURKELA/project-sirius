@@ -9,15 +9,16 @@
 		try
 		{
 			$id = $_SESSION['admin_id'];
+			// echo $id;
 			$template_preview = [];
 
 			$query = mysqli_query($con, "SELECT * FROM template_preview where admin_fk ='".$id."'");
 
 			if (mysqli_num_rows($query) == 0) 
 			{
-				return json_encode(array('status' => 'failure', 'result' => 'admin_id not found'));
+				echo json_encode(array('status' => 'failure', 'result' => 'admin_id not found'));
+				return;
 			}
-
 			else
 			{
 				$template_preview = mysqli_fetch_array($query,MYSQLI_ASSOC);
@@ -32,5 +33,9 @@
             echo json_encode(array('status' => 'failure', 'result' => $e->getMessage()));
         }
 	}
-
+	else
+	{
+		echo(json_encode(array('status'=>'error','result' => 'You are not logged in')));
+	}       
+	 
 ?>

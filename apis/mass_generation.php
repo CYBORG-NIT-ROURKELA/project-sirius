@@ -31,6 +31,7 @@ if ((isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))||(isset($_SE
                 // echo $font;
                 $path = $templateName;
                 $ext = pathinfo($path, PATHINFO_EXTENSION);
+                
                 if($ext=='jpg' || $ext=='jpeg')
                 {
                     $image = imagecreatefromjpeg($template);
@@ -43,6 +44,8 @@ if ((isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))||(isset($_SE
                 $file = $name."_".$id;
                 imagejpeg($image, "../assets/img/certificates/" . $file . ".jpg");
                 imagedestroy($image);
+
+
                 $_SESSION['certificate'] = "../assets/img/certificates/" . $file . ".jpg";
                 if(isset($_SESSION['certificate'])){
                     echo(json_encode(array('status'=>'success','result' => $file)));
