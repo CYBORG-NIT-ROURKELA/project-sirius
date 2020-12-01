@@ -93,65 +93,47 @@ $("#download_all").click(function(event) {
         contentType: false,
         processData: false,
         success: function(response) {
-            console.log((response));
             var res = JSON.parse(response);
-            if (res.status == "success") {
+            // console.log((res.result[2]));
+
+            if (res.status == "success") 
+            {
                 swal('Successfully Generated', '', 'success');
-                var folder = "../assets/img/certificates/";
-                var x = res.result;
-                urls = [];
 
-                $.ajax({
-                    url: folder,
-                    success: function(data) {
-                        $(data).find("a").attr("href", function(i, val) {
-
-                            if ((val.match(/\.(jpe?g|png|gif)$/)) && (val.match(x))) {
-                                var res1 = folder.concat(val);
-                                urls.push(res1);
-
-                            }
-                        });
-                        
                         var nombre = "Zip_img";
                         //The function is called
-                        compressed_img(urls, nombre);
+                        compressed_img(res.result, nombre);
 
                         function compressed_img(urls, nombre) {
-                            var zip = new JSZip();
-                            var count = 0;
-                            var name = nombre + ".zip";
-                            urls.forEach(function(url) {
-                                
-                                JSZipUtils.getBinaryContent(url, function(err, data) {
-                                    if (err) {
-                                        throw err;
-                                    }
-                                    zip.file(url.split("img/")[1], data, {
-                                        binary: true
-                                    });
-                                    count++;
-                                    console.log(url.split("img/")[1]);
-                                    if (count == urls.length) {
-                                        zip.generateAsync({
-                                            type: 'blob'
-                                        }).then(function(content) {
-                                            saveAs(content, name);
 
-                                        });
-                                    }
-                                });
-                            });
+                            if(urls.length<=0)
+                            {
+                                console.log("empty user certificates");
+                                return;
+                            }
+                            var zip = new JSZip();
+                            
+                            function download(data) {
+                                const a = document.createElement("a")
+                                a.href = "data:application/zip;base64," + data
+                                a.setAttribute("download", nombre + ".zip")
+                                a.style.display = "none"
+                                a.addEventListener("click", e => e.stopPropagation()) // not relevant for modern browsers
+                                document.body.appendChild(a)
+                                setTimeout(() => { // setTimeout - not relevant for modern browsers
+                                  a.click()
+                                  document.body.removeChild(a) 
+                                }, 0)
+                              }
+
+
+                            urls.forEach((img, i) => zip.file(res.filenames[i]+".png", img, {base64: true}))
+                            zip.generateAsync({type: "base64"}).then(download)
                         }
 
 
-                    }
-                });
-
-
             } else {
-
-                swal(res.message, '', 'error');
+                swal(res.result, '', 'error');
             }
         }
     });
