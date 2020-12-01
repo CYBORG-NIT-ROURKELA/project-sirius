@@ -4,14 +4,17 @@ $(document).ready(function() {
         url: '../apis/fetch_preview.php',
         type: 'GET',
         success: function(response) {
-            console.log(response);
+            // console.log(response);
             var response = JSON.parse(response);
-            console.log(response);
+            // console.log(response);
             if (response.status == 'success') {
                 // console.log(response.result);
                 put_existing_values(response);
-            } else {
-                window.location = "./login.html";
+            } 
+            else 
+            {
+                console.log(response.result);
+                // window.location = "./login.html";
             }
         }
 
