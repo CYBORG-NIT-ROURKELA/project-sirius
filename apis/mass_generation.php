@@ -42,16 +42,25 @@ if ((isset($_SESSION['logged_in']) && isset($_SESSION['admin_id']))||(isset($_SE
                 $color = imagecolorallocate($image, $colors[0], $colors[1], $colors[2]);
                 imagettftext($image, $fontSize, $textAngle, $xCoordinate, $yCoordinate, $color, $font, $name);
                 $file = $name."_".$id;
-                imagejpeg($image, "../assets/img/certificates/" . $file . ".jpg");
-                imagedestroy($image);
+                // imagejpeg($image, "../assets/img/certificates/" . $file . ".jpg");
+                // imagejpeg($image);
+                // imagedestroy($image);
+                // echo $image;
+
+                ob_start(); // Let's start output buffering.
+                imagejpeg($image); //This will normally output the image, but because of ob_start(), it won't.
+                $contents = ob_get_contents(); //Instead, output above is saved to $contents
+                ob_end_clean(); //End the output buffer.
+
+                $base64 = base64_encode($contents);
 
 
-                $_SESSION['certificate'] = "../assets/img/certificates/" . $file . ".jpg";
-                if(isset($_SESSION['certificate'])){
-                    echo(json_encode(array('status'=>'success','result' => $file)));
+                // $_SESSION['certificate'] = "../assets/img/certificates/" . $file . ".jpg";
+                // if(isset($_SESSION['certificate'])){
+                echo(json_encode(array('status'=>'success','result' => $base64,'filename' => $file)));
                      
+                // }
 
-                }
             }else{
                 echo(json_encode(array('status'=>'error','result' => 'Styling variables not given')));
             }

@@ -13,6 +13,7 @@ function fetch_complete_details4() {
         },
     });
 }
+
 x = 0;
 xa = 1;
 const count1 = [];
@@ -56,22 +57,27 @@ $("#tbval").on("click", "#download", function() {
             name: name,
         },
         success: function(response) {
-            console.log((response));
+            // console.log((response));
             var res = JSON.parse(response);
 
             if (res.status == "success") {
-                file_name = res.result;
-                console.log(file_name);
-                var str1 = "../assets/img/certificates/";
-                var str2 = ".jpg";
-                var res = file_name.concat(str2);
-                var res1 = str1.concat(res);
-                saveAs(res1, res);
-            } else {
+                var file_name = res.result;
+                // console.log(file_name);
 
+                var a = document.createElement("a"); //Create <a>
+                a.href = "data:image/png;base64," + file_name; //Image Base64 Goes here
+                a.download = res.filename + ".png"; //File name Here
+                a.click(); //Downloaded file
+                
+                // var str1 = "../assets/img/certificates/";
+                // var str2 = ".jpg";
+                // var res = file_name.concat(str2);
+                // var res1 = str1.concat(res);
+                // saveAs(res1, res);
+            } 
+            else 
+            {
                 swal(res.message, '', 'error');
-
-
             }
         }
     });
