@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/35392585/95647461-44a31f00-0aed-11eb-95b6-4c3f20654fb4.png)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/irsayvid"><img src="https://avatars2.githubusercontent.com/u/56034618?v=4" width="100px;" alt=""/><br /><sub><b>Divya Sri Darimisetti</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=irsayvid" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/1vivekanand"><img src="https://avatars3.githubusercontent.com/u/63180857?v=4" width="100px;" alt=""/><br /><sub><b>1vivekanand</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=1vivekanand" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/anshusandhi6"><img src="https://avatars3.githubusercontent.com/u/59245156?v=4" width="100px;" alt=""/><br /><sub><b>Anshuman Sandhibigraha</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=anshusandhi6" title="Code">💻</a></td>
+    <td align="center"><a href="https://biswajeet-sahoo.netlify.app/"><img src="https://avatars1.githubusercontent.com/u/35392585?v=4" width="100px;" alt=""/><br /><sub><b>Biswajeet Sahoo</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=bislara" title="Code">💻</a></td>
   </tr>
 </table>
 

@@ -12,7 +12,7 @@ $(document).ready(function() {
             processData: false,
             success: function(response) {
 
-                // console.log((response));
+                console.log((response));
                 var res = JSON.parse(response);
                 if (res.status == "success") {
                     swal('Updated Successfully', '', 'success');

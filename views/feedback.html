@@ -67,15 +67,18 @@
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
     <style type="text/css">
-        .form-group-inner label{
+        .form-group-inner label {
             color: white;
             text-align: right;
         }
-        .form-group-inner input[type="email"], .form-group-inner input[type="password"], .form-group-inner input[type="text"], .form-group-inner input[type="number"], .form-select-list .custom-select-value{
+        
+        .form-group-inner input[type="email"],
+        .form-group-inner input[type="password"],
+        .form-group-inner input[type="text"],
+        .form-group-inner input[type="number"],
+        .form-select-list .custom-select-value {
             color: white;
         }
-
-
     </style>
 
 </head>
@@ -85,93 +88,95 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-            <!-- Mobile Menu start -->
-            
-            <!-- Mobile Menu end -->
-            <div class="breadcome-area" style="padding-top: 20px; color: white; padding-bottom: 20px;">
-                <div class="container-fluid" >
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="sparkline12-list">
-                            <div class="sparkline12-hd">
-                                <div class="main-sparkline12-hd">
-                                    <h1 style="color: white; text-align: center;">Feedback Form</h1>
-                                </div>
+    <!-- Mobile Menu start -->
+
+    <!-- Mobile Menu end -->
+    <div class="breadcome-area" style="padding-top: 20px; color: white; padding-bottom: 20px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="sparkline12-list">
+                        <div class="sparkline12-hd">
+                            <div class="main-sparkline12-hd">
+                                <h1 style="color: white; text-align: center;">Feedback Form</h1>
                             </div>
-                            <div class="sparkline12-graph">
-                                <div class="basic-login-form-ad">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="all-form-element-inner">
-                                                <form action="#">
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                                                <label class="login2 pull-right pull-right-pro">Name</label>
-                                                            </div>
-                                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                                                                <input type="text" class="form-control" id="user_name"/>
+                        </div>
+                        <div class="sparkline12-graph">
+                            <div class="basic-login-form-ad">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="all-form-element-inner">
+                                            <form action="#">
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                            <label class="login2 pull-right pull-right-pro">Name</label>
+                                                        </div>
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                                            <input type="text" class="form-control" id="user_name" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                            <label class="login2 pull-right pull-right-pro">Email
+                                                                ID</label>
+                                                        </div>
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                                            <input type="text" class="form-control" id="email" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                            <label class="login2 pull-right pull-right-pro">Rating</label>
+                                                        </div>
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                                            <input type="number" class="form-control" max="10" min="0" id="rating" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                            <label class="login2 pull-right pull-right-pro">Comments
+                                                                about the event</label>
+                                                        </div>
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                                            <div class="form-select-list">
+                                                                <textarea style="width: 100%; color: white; background-color:#152036;" rows="10" id="suggestions"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                                                <label class="login2 pull-right pull-right-pro">Email ID</label>
-                                                            </div>
-                                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                                                                <input type="text" class="form-control" id="email" />
+                                                </div>
+                                                <div class="form-group-inner">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                            <label class="login2 pull-right pull-right-pro">Suggestions
+                                                                for improving</label>
+                                                        </div>
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                                            <div class="form-select-list">
+                                                                <textarea style="width: 100%; color: white; background-color:#152036;" rows="10" id="comment_abt_event"></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group-inner">
+                                                </div>
+
+                                                <div class="form-group-inner">
+                                                    <div class="login-btn-inner">
                                                         <div class="row">
-                                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                                                <label class="login2 pull-right pull-right-pro">Rating</label>
-                                                            </div>
-                                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                                                                <input type="number" class="form-control" max="10" min="0" id="rating"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                                                <label class="login2 pull-right pull-right-pro" style="">Comments about the event</label>
-                                                            </div>
-                                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                                                                <div class="form-select-list">
-                                                                    <textarea style="width: 100%; color: white; background-color:#152036;" rows="10" id="suggestions"></textarea>
+                                                            <div class="col-lg-12">
+                                                                <div class="login-horizental cancel-wp pull-left" style="width: 100%; text-align: center;">
+                                                                    <button class="btn btn-sm btn-primary login-submit-cs" type="submit" id="submitted">Submit</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                                                                <label class="login2 pull-right pull-right-pro" style="">Suggestions for improving</label>
-                                                            </div>
-                                                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                                                                <div class="form-select-list">
-                                                                    <textarea style="width: 100%; color: white; background-color:#152036;" rows="10" id="comment_abt_event"></textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="form-group-inner">
-                                                        <div class="login-btn-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="login-horizental cancel-wp pull-left" style="width: 100%; text-align: center;">
-                                                                        <button class="btn btn-sm btn-primary login-submit-cs" type="submit" id="submitted">Submit</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -181,18 +186,20 @@
                 </div>
             </div>
         </div>
-        <!-- Basic Form End-->
-        <div class="footer-copyright-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-copy-right">
-                            <p>Copyright © 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.</p>
-                        </div>
+    </div>
+    <!-- Basic Form End-->
+    <div class="footer-copyright-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- jquery
