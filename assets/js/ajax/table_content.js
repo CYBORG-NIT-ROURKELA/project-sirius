@@ -46,6 +46,35 @@ function add_complete_details4(response) {
     }
 }
 
+$("#search-btn").click(function(event) {
+    event.preventDefault();
+    var kword = $("#keyword").val();
+    console.log(kword);
+    // if (kword == "") {
+    //     fetch_complete_details4();
+    // } else {
+    $.ajax({
+        url: "../apis/search_data.php",
+        data: { kword: kword },
+        type: "POST",
+        success: function(response) {
+            var response1 = JSON.parse(response);
+            if (response1.result.length == 0) {
+                console.log("Empty");
+            } else {
+                var response = JSON.parse(response);
+                xa = 1;
+                $("#tbval").empty();
+                headings = "<tr><th> Name </th><th> Email </th><th> Download </th><th> Mail </th></tr> ";
+                $("#tbval").append(headings);
+                add_complete_details4(response);
+            }
+        },
+    });
+    // }
+
+});
+
 $("#tbval").on("click", "#download", function() {
     // get the current row
     var currentRow3 = $(this).closest("tr");
@@ -68,15 +97,13 @@ $("#tbval").on("click", "#download", function() {
                 a.href = "data:image/png;base64," + file_name; //Image Base64 Goes here
                 a.download = res.filename + ".png"; //File name Here
                 a.click(); //Downloaded file
-                
+
                 // var str1 = "../assets/img/certificates/";
                 // var str2 = ".jpg";
                 // var res = file_name.concat(str2);
                 // var res1 = str1.concat(res);
                 // saveAs(res1, res);
-            } 
-            else 
-            {
+            } else {
                 swal(res.message, '', 'error');
             }
         }
@@ -96,40 +123,38 @@ $("#download_all").click(function(event) {
             var res = JSON.parse(response);
             // console.log((res.result[2]));
 
-            if (res.status == "success") 
-            {
+            if (res.status == "success") {
                 swal('Successfully Generated', '', 'success');
 
-                        var nombre = "Zip_img";
-                        //The function is called
-                        compressed_img(res.result, nombre);
+                var nombre = "Zip_img";
+                //The function is called
+                compressed_img(res.result, nombre);
 
-                        function compressed_img(urls, nombre) {
+                function compressed_img(urls, nombre) {
 
-                            if(urls.length<=0)
-                            {
-                                console.log("empty user certificates");
-                                return;
-                            }
-                            var zip = new JSZip();
-                            
-                            function download(data) {
-                                const a = document.createElement("a")
-                                a.href = "data:application/zip;base64," + data
-                                a.setAttribute("download", nombre + ".zip")
-                                a.style.display = "none"
-                                a.addEventListener("click", e => e.stopPropagation()) // not relevant for modern browsers
-                                document.body.appendChild(a)
-                                setTimeout(() => { // setTimeout - not relevant for modern browsers
-                                  a.click()
-                                  document.body.removeChild(a) 
-                                }, 0)
-                              }
+                    if (urls.length <= 0) {
+                        console.log("empty user certificates");
+                        return;
+                    }
+                    var zip = new JSZip();
+
+                    function download(data) {
+                        const a = document.createElement("a")
+                        a.href = "data:application/zip;base64," + data
+                        a.setAttribute("download", nombre + ".zip")
+                        a.style.display = "none"
+                        a.addEventListener("click", e => e.stopPropagation()) // not relevant for modern browsers
+                        document.body.appendChild(a)
+                        setTimeout(() => { // setTimeout - not relevant for modern browsers
+                            a.click()
+                            document.body.removeChild(a)
+                        }, 0)
+                    }
 
 
-                            urls.forEach((img, i) => zip.file(res.filenames[i]+".png", img, {base64: true}))
-                            zip.generateAsync({type: "base64"}).then(download)
-                        }
+                    urls.forEach((img, i) => zip.file(res.filenames[i] + ".png", img, { base64: true }))
+                    zip.generateAsync({ type: "base64" }).then(download)
+                }
 
 
             } else {
