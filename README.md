@@ -1,4 +1,7 @@
 ![image](https://user-images.githubusercontent.com/35392585/95647461-44a31f00-0aed-11eb-95b6-4c3f20654fb4.png)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
 # PROJECT SIRIUS
@@ -41,5 +44,25 @@ You can go through the following links to know more about using Git and GitHub.
 - [GitHub Commits](https://docs.github.com/en/github/committing-changes-to-your-project)
 
 
-## 💪 CONTRIBUTORS
+## Contributors ✨
 
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Ashu-strange"><img src="https://avatars0.githubusercontent.com/u/64271921?v=4" width="100px;" alt=""/><br /><sub><b>Ashu-strange</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=Ashu-strange" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/irsayvid"><img src="https://avatars2.githubusercontent.com/u/56034618?v=4" width="100px;" alt=""/><br /><sub><b>Divya Sri Darimisetti</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=irsayvid" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/1vivekanand"><img src="https://avatars3.githubusercontent.com/u/63180857?v=4" width="100px;" alt=""/><br /><sub><b>1vivekanand</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=1vivekanand" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/anshusandhi6"><img src="https://avatars3.githubusercontent.com/u/59245156?v=4" width="100px;" alt=""/><br /><sub><b>Anshuman Sandhibigraha</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=anshusandhi6" title="Code">💻</a></td>
+    <td align="center"><a href="https://biswajeet-sahoo.netlify.app/"><img src="https://avatars1.githubusercontent.com/u/35392585?v=4" width="100px;" alt=""/><br /><sub><b>Biswajeet Sahoo</b></sub></a><br /><a href="https://github.com/CYBORG-NIT-ROURKELA/project-sirius/commits?author=bislara" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

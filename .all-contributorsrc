@@ -1,0 +1,60 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Ashu-strange",
+      "name": "Ashu-strange",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/64271921?v=4",
+      "profile": "https://github.com/Ashu-strange",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "irsayvid",
+      "name": "Divya Sri Darimisetti",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/56034618?v=4",
+      "profile": "https://github.com/irsayvid",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "1vivekanand",
+      "name": "1vivekanand",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/63180857?v=4",
+      "profile": "https://github.com/1vivekanand",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "anshusandhi6",
+      "name": "Anshuman Sandhibigraha",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/59245156?v=4",
+      "profile": "https://github.com/anshusandhi6",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bislara",
+      "name": "Biswajeet Sahoo",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/35392585?v=4",
+      "profile": "https://biswajeet-sahoo.netlify.app/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "project-sirius",
+  "projectOwner": "CYBORG-NIT-ROURKELA",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Admin Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet" />
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+    <!-- owl.carousel CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="../assets/css/owl.theme.css" />
+    <link rel="stylesheet" href="../assets/css/owl.transitions.css" />
+    <!-- animate CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <!-- normalize CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <!-- meanmenu icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/meanmenu.min.css" />
+    <!-- main CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- morrisjs CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/morrisjs/morris.css" />
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/scrollbar/jquery.mCustomScrollbar.min.css" />
+    <!-- metisMenu CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/metisMenu/metisMenu.min.css" />
+    <link rel="stylesheet" href="../assets/css/metisMenu/metisMenu-vertical.css" />
+    <!-- calendar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/calendar/fullcalendar.min.css" />
+    <link rel="stylesheet" href="../assets/css/calendar/fullcalendar.print.min.css" />
+    <!-- modals CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/modals.css" />
+    <!-- forms CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/form/all-type-forms.css" />
+    <!-- style CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <!-- nalika Icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/nalika-icon.css" />
+    <!-- modernizr JS
+        ============================================ -->
+    <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <style type="text/css">
+        .form-group-inner label {
+            color: white;
+            text-align: right;
+        }
+        
+        .form-group-inner input[type="email"],
+        .form-group-inner input[type="password"],
+        .form-group-inner input[type="text"],
+        .form-group-inner input[type="date"],
+        .form-group-inner input[type="number"],
+        .form-group-inner textarea,
+        .form-select-list .custom-select-value {
+            color: white;
+        }
+        
+        .single-product-details h2 {
+            color: #e12503;
+            font-size: 20px;
+        }
+        
+        .single-product-details .color-quality-pro .email h1 {
+            text-transform: lowercase;
+        }
+    </style>
+    <style>
+        .sidebar-header img {
+            height: 60px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="#"><img class="main-logo" src="../assets/img/logo/cyborg-white.png" alt="" /></a>
+                <strong><img src="../assets/img/logo/cyborg-white.png" alt="" /></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li>
+                            <a class="has-arrow" href="#">
+                                <i class="fa big-icon fa-home icon-wrap"></i>
+                                <span class="mini-click-non">Home</span>
+                            </a>
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li>
+                                    <a title="Dashboard" href="#"><span class="mini-sub-pro">Dashboard</span></a>
+                                </li>
+                                <li>
+                                    <a title="Certificate" href="admin.html"><span
+                                            class="mini-sub-pro">Certificate</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="#"><img class="main-logo" src="../assets/img/logo/cyborg-black.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                <i class="fa fa-bars"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="float: right">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                <li class="nav-item dropdown">
+                                                    <a href="Contact-us.html"><i
+                                                            class="fa fa-envelope-o adminpro-chat-pro"
+                                                            aria-hidden="true">Contact Us</i><span
+                                                            class="indicator-ms"></span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                        <i class="fa fa-user adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
+                                                        <span class="admin-name">More options</span>
+                                                        <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
+                                                    </a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li>
+                                                            <a href="login.html" id="logout-btn"><span
+                                                                    class="fa fa-lock author-log-ic"></span>Log Out</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- </li>
+                                                <div role="menu" class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
+                                                    
+                                                    </div> -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="mobile-menu-nav">
+                                        <li>
+                                            <a data-toggle="collapse" data-target="#Charts" href="#">Home
+                                                <span
+                                                    class="admin-project-icon adminpro-icon adminpro-down-arrow"></span></a>
+                                            <ul class="collapse dropdown-header-top">
+                                                <li><a href="#">Dashboard </a></li>
+                                                <li><a href="admin.html">Certificate</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+            <div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="breadcomb-wp">
+                                            <div class="breadcomb-icon">
+                                                <i class="icon nalika-home"></i>
+                                            </div>
+                                            <div class="breadcomb-ctn">
+                                                <h2>Admin Details</h2>
+                                                <p>Welcome Admin <span class="bread-ntd"></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="breadcomb-report">
+                                            <button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn">
+                                                <i class="icon nalika-download"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single pro tab start-->
+        <div class="single-product-tab-area mg-t-0 mg-b-30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="single-product-pr">
+                            <div class="row">
+                                <div class="single-product-details res-pro-tb">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <h2>Name of Admin</h2>
+                                        <span class="admin-name">
+                                            <h1 id="admin_name">Name</h1>
+                                        </span>
+                                    </div>
+                                    <div class="color-quality-pro">
+                                        <div class="contact col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <h2>Contact Number</h2>
+                                            <h1 id="admin_num">9876543210</h1>
+                                        </div>
+                                        <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                            <h2>Email id</h2>
+                                            <h1 id="admin_mail">abc@gmail.com</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single pro tab End-->
+        <!-- Single pro tab review Start-->
+        <div class="single-pro-review-area mt-t-30 mg-b-30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="single-tb-pr">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <ul id="myTab" class="tab-review-design">
+                                        <li class="active">
+                                            <a href="#description">Event information </a>
+                                        </li>
+                                        <li>
+                                            <a href="#reviews"><span><i class="fa fa-star"></i><i
+                                                        class="fa fa-star"></i></span></a>
+                                        </li>
+                                        <li><a href="#INFORMATION">Event Description</a></li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content">
+                                        <div class="product-tab-list product-details-ect tab-pane fade active in" id="description">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="review-content-section">
+                                                        <p>
+                                                            Event Name: <span id="eventn"></span><br /><br />Event Date:
+                                                            <span id="eventd"></span><br /><br />Event Organizer: <span id="evento"></span>
+                                                            <br /><br />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-tab-list tab-pane fade" id="INFORMATION">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="review-content-section">
+                                                        <p id="event_info">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                                                            dicta sunt explicabo.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Basic Form End-->
+        <div class="footer-copyright-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copy-right">
+                            <p>
+                                Copyright © 2020 | Designed with
+                                <i class="fa fa-heart" aria-hidden="true"></i> by Team CYBORG | Template from
+                                <a href="https://colorlib.com/wp/templates/" style="color: inherit">Colorlib</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery
+        ============================================ -->
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+        ============================================ -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- wow JS
+        ============================================ -->
+    <script src="../assets/js/wow.min.js"></script>
+    <!-- price-slider JS
+        ============================================ -->
+    <script src="../assets/js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+        ============================================ -->
+    <script src="../assets/js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+        ============================================ -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+        ============================================ -->
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+        ============================================ -->
+    <script src="../assets/js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+        ============================================ -->
+    <script src="../assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../assets/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+        ============================================ -->
+    <script src="../assets/js/metisMenu/metisMenu.min.js"></script>
+    <script src="../assets/js/metisMenu/metisMenu-active.js"></script>
+    <!-- tab JS
+        ============================================ -->
+    <script src="../assets/js/tab.js"></script>
+    <!-- icheck JS
+        ============================================ -->
+    <script src="../assets/js/icheck/icheck.min.js"></script>
+    <script src="../assets/js/icheck/icheck-active.js"></script>
+    <!-- plugins JS
+        ============================================ -->
+    <script src="../assets/js/plugins.js"></script>
+    <!-- main JS
+        ============================================ -->
+    <script src="../assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../assets/js/ajax/check_login.js"></script>
+    <script src="../assets/js/ajax/admin_dash.js"></script>
+    <script src="../assets/js/ajax/logout.js"></script>
+</body>
+
+</html>

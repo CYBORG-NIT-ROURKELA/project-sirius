@@ -66,18 +66,26 @@
         ============================================ -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../assets/js/ajax/user_certificate.js"></script>
+
     <link rel="stylesheet" href="../assets/css/nalika-icon.css">
 
     <style type="text/css">
-        .form-group-inner label{
+        .form-group-inner label {
             color: white;
             text-align: right;
         }
-        .form-group-inner input[type="email"], .form-group-inner input[type="password"], .form-group-inner input[type="text"], .form-group-inner input[type="number"], .form-select-list .custom-select-value{
+        
+        .form-group-inner input[type="email"],
+        .form-group-inner input[type="password"],
+        .form-group-inner input[type="text"],
+        .form-group-inner input[type="number"],
+        .form-select-list .custom-select-value {
             color: white;
         }
-
-
     </style>
 
 </head>
@@ -87,69 +95,70 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-            <!-- Mobile Menu start -->
-            
-            <!-- Mobile Menu end -->
-            <div class="breadcome-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="breadcomb-wp">
-                                            <div class="breadcomb-icon">
-                                                <i class="icon nalika-picture"></i>
-                                            </div>
-                                            <div class="breadcomb-ctn">
-                                                <h2>Username</h2>
-                                                <p>Event Certificate<span class="bread-ntd"></span></p>
-                                            </div>
-                                        </div>
+    <!-- Mobile Menu start -->
+
+    <!-- Mobile Menu end -->
+    <div class="breadcome-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="breadcome-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="breadcomb-wp">
+                                    <div class="breadcomb-icon">
+                                        <i class="icon nalika-picture"></i>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="breadcomb-report">
-                                            <button data-toggle="tooltip" data-placement="left" title="Download Certificate" class="btn"><i class="icon nalika-download"></i></button>
-                                        </div>
+                                    <div class="breadcomb-ctn">
+                                        <h2 id="username">Username</h2>
+                                        <p>Event Certificate<span class="bread-ntd"></span></p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="breadcomb-report">
+                                    <button data-toggle="tooltip" data-placement="left" title="Download Certificate" id="download-img" class="btn"><i class="icon nalika-download"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-product-tab-area mg-t-0 mg-b-30">
-            <div class="container-fluid" style="text-align: center;">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="single-product-pr">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div id="myTabContent1" class="tab-content">
-                                        <div class="product-tab-list tab-pane fade active in" id="single-tab1">
-                                            <img src="../assets/img/product/bg-1.jpg" alt="" />
-                                        </div>
+        </div>
+    </div>
+    <div class="single-product-tab-area mg-t-0 mg-b-30">
+        <div class="container-fluid" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="single-product-pr">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="myTabContent1" class="tab-content">
+                                    <div class="product-tab-list tab-pane fade active in" id="single-tab1">
+                                        <img id="certi-img" src="../assets/img/product/bg-1.jpg" alt="" />
                                     </div>
                                 </div>
-                                
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Basic Form End-->
-        <div class="footer-copyright-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-copy-right">
-                            <p>Copyright © 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.</p>
-                        </div>
+    </div>
+    <!-- Basic Form End-->
+    <div class="footer-copyright-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- jquery
@@ -197,6 +206,7 @@
     <!-- main JS
         ============================================ -->
     <script src="../assets/js/main.js"></script>
+
 </body>
 
 </html>
