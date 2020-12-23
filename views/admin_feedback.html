@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Admin Feedback</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet" />
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+    <!-- owl.carousel CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="../assets/css/owl.theme.css" />
+    <link rel="stylesheet" href="../assets/css/owl.transitions.css" />
+    <!-- animate CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <!-- normalize CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <!-- meanmenu icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/meanmenu.min.css" />
+    <!-- main CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- morrisjs CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/morrisjs/morris.css" />
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/scrollbar/jquery.mCustomScrollbar.min.css" />
+    <!-- metisMenu CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/metisMenu/metisMenu.min.css" />
+    <link rel="stylesheet" href="../assets/css/metisMenu/metisMenu-vertical.css" />
+    <!-- calendar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/calendar/fullcalendar.min.css" />
+    <link rel="stylesheet" href="../assets/css/calendar/fullcalendar.print.min.css" />
+    <!-- modals CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/modals.css" />
+    <!-- forms CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/form/all-type-forms.css" />
+    <!-- style CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <!-- modernizr JS
+        ============================================ -->
+    <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <style type="text/css">
+        .form-group-inner label {
+            color: white;
+            text-align: right;
+        }
+        
+        .form-group-inner input[type="email"],
+        .form-group-inner input[type="password"],
+        .form-group-inner input[type="text"],
+        .form-group-inner input[type="date"],
+        .form-group-inner input[type="number"],
+        .form-group-inner textarea,
+        .form-select-list .custom-select-value {
+            color: white;
+        }
+    </style>
+    <style>
+        .sidebar-header img {
+            height: 60px;
+            width: 80px;
+        }
+
+        th{
+            text-align: center;
+            font-size: 20px;
+        }
+        table tr {
+            border: 1px solid black;
+            padding: 20px;
+        }​
+
+    </style>
+</head>
+
+<body>
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="index.html"><img class="main-logo" src="../assets/img/logo/cyborg-white.png" alt="" /></a>
+                <strong><img src="../assets/img/logo/cyborg-white.png" alt="" /></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li>
+                            <a class="has-arrow" href="index.html">
+                                <i class="fa big-icon fa-home icon-wrap"></i>
+                                <span class="mini-click-non">Home</span>
+                            </a>
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li>
+                                    <a title="Dashboard" href="dashboard.html"><span
+                                            class="mini-sub-pro">Dashboard</span></a>
+                                </li>
+                                <li>
+                                    <a title="Certificate" href="admin_certificate.html"><span
+                                            class="mini-sub-pro">Certificate</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="index.html"><img class="main-logo" src="../assets/img/logo/cyborg-black.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                                <i class="fa fa-bars"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="float: right">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                <li class="nav-item dropdown">
+                                                    <a href="contact.html"><i class="fa fa-envelope-o adminpro-chat-pro"
+                                                            aria-hidden="true">Contact Us</i><span
+                                                            class="indicator-ms"></span></a>
+                                                </li>
+                                                <li>
+                                                    <div role="menu" class="notification-author dropdown-menu animated zoomIn"></div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                        <i class="fa fa-user adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
+                                                        <span class="admin-name">More options</span>
+                                                        <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
+                                                    </a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li>
+                                                            <a href="login.html" id="logout-btn" s><span
+                                                                    class="fa fa-lock author-log-ic"></span>Log
+                                                                Out</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="mobile-menu-nav">
+                                        <li>
+                                            <a data-toggle="collapse" data-target="#Charts" href="#">Home
+                                                <span
+                                                    class="admin-project-icon adminpro-icon adminpro-down-arrow"></span></a>
+                                            <ul class="collapse dropdown-header-top">
+                                                <li><a href="dashboard.html">Dashboard </a></li>
+                                                <li><a href="admin_certificate.html">Certificate</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+            <div class="breadcome-area" style="padding-top: 20px; color: white; padding-bottom: 20px">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="sparkline12-list">
+                                <div class="sparkline12-hd">
+                                    <div class="main-sparkline12-hd">
+                                        <h1 style="color: #e12503; text-align: center; font-size: 30px;">
+                                            Feedback
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div style="overflow-x:auto; height: 75vh;">
+                                    <table>
+                                        <tr>
+                                          <th style="color: #e12503;">Name</th>
+                                          <th style="color: #e12503;">Email ID</th>
+                                          <th style="color: #e12503;">Rating</th>
+                                          <th style="color: #e12503;">Comments on event</th>
+                                          <th style="color: #e12503;">Suggestions for Improving</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Jill</td>
+                                          <td>abc@gmail.com</td>
+                                          <td>50</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jill</td>
+                                          <td>abc@gmail.com</td>
+                                          <td>50</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jill</td>
+                                          <td>abc@gmail.com</td>
+                                          <td>50</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jill</td>
+                                          <td>abc@gmail.com</td>
+                                          <td>50</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jill</td>
+                                          <td>abc@gmail.com</td>
+                                          <td>50</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jill</td>
+                                          <td>abc@gmail.com</td>
+                                          <td>50</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                          <td style="min-width: 300px;">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Basic Form End-->
+            <div class="footer-copyright-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-copy-right">
+                                <p>
+                                    Copyright © 2020 | Designed with
+                                    <i class="fa fa-heart" aria-hidden="true"></i> by Team CYBORG | Template from
+                                    <a href="https://colorlib.com/wp/templates/" style="color: inherit">Colorlib</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery ============================================ -->
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS ============================================ -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- wow JS   ============================================ -->
+    <script src="../assets/js/wow.min.js"></script>
+    <!-- price-slider JS ============================================ -->
+    <script src="../assets/js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS   ============================================ -->
+    <script src="../assets/js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS    ============================================ -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!-- sticky JS        ============================================ -->
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <!-- scrollUp JS        ============================================ -->
+    <script src="../assets/js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS ============================================ -->
+    <script src="../assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../assets/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS ============================================ -->
+    <script src="../assets/js/metisMenu/metisMenu.min.js"></script>
+    <script src="../assets/js/metisMenu/metisMenu-active.js"></script>
+    <!-- tab JS ============================================ -->
+    <script src="../assets/js/tab.js"></script>
+    <!-- icheck JS ============================================ -->
+    <script src="../assets/js/icheck/icheck.min.js"></script>
+    <script src="../assets/js/icheck/icheck-active.js"></script>
+    <!-- plugins JS ============================================ -->
+    <script src="../assets/js/plugins.js"></script>
+    <!-- main JS ============================================ -->
+    <script src="../assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="../assets/js/ajax/check_login.js"></script>
+    <script src="../assets/js/ajax/register.js"></script>
+    <script src="../assets/js/ajax/value.js"></script>
+
+    <script src="../assets/js/ajax/logout.js"></script>
+</body>
+
+</html>
