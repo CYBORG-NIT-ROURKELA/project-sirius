@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Event</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon
+        ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+    <!-- Google Fonts
+        ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet" />
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+    <!-- owl.carousel CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="../assets/css/owl.theme.css" />
+    <link rel="stylesheet" href="../assets/css/owl.transitions.css" />
+    <!-- animate CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <!-- normalize CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <!-- meanmenu icon CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/meanmenu.min.css" />
+    <!-- main CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <!-- morrisjs CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/morrisjs/morris.css" />
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/scrollbar/jquery.mCustomScrollbar.min.css" />
+    <!-- metisMenu CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/metisMenu/metisMenu.min.css" />
+    <link rel="stylesheet" href="../assets/css/metisMenu/metisMenu-vertical.css" />
+    <!-- calendar CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/calendar/fullcalendar.min.css" />
+    <link rel="stylesheet" href="../assets/css/calendar/fullcalendar.print.min.css" />
+    <!-- modals CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/modals.css" />
+    <!-- forms CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/form/all-type-forms.css" />
+    <!-- style CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- responsive CSS
+        ============================================ -->
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <!-- modernizr JS
+        ============================================ -->
+    <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <style type="text/css">
+        .form-group-inner label {
+            color: white;
+            text-align: right;
+        }
+        
+        .form-group-inner input[type="email"],
+        .form-group-inner input[type="password"],
+        .form-group-inner input[type="text"],
+        .form-group-inner input[type="date"],
+        .form-group-inner input[type="number"],
+        .form-group-inner textarea,
+        .form-select-list .custom-select-value {
+            color: white;
+        }
+    </style>
+    <style>
+        .sidebar-header img {
+            height: 60px;
+            width: 80px;
+        }
+    </style>
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #7a4deb;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #1b2a47;
+  color: #e81c3e;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color: #1b2a47}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #1b2a47;
+  color: white;
+}
+</style>
+
+<!--create event modal css-->
+  <style>
+    
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: #1b2a47;
+  padding: 35px;
+  border: 2px solid #1b2a47;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10000;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #1b2a47;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 1s ease-in-out;
+ 
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #e81c3e;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+  </style>
+</head>
+
+<body>
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="index.html"><img class="main-logo" src="../assets/img/logo/cyborg-white.png" alt="" /></a>
+                <strong><img src="../assets/img/logo/cyborg-white.png" alt="" /></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li>
+                            <a class="has-arrow" href="index.html">
+                                <i class="fa big-icon fa-home icon-wrap"></i>
+                                <span class="mini-click-non">Home</span>
+                            </a>
+                            <ul class="submenu-angle" aria-expanded="true">
+                                <li>
+                                    <a title="Dashboard" href="index.html"><span class="mini-sub-pro">Dashboard</span></a>
+                                </li>
+                                <li>
+                                    <a title="Certificate" href="certificate.html"><span class="mini-sub-pro">Certificate</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="index.html"><img class="main-logo" src="../assets/img/logo/cyborg-black.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                        <i class="fa fa-bars"></i>
+                      </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" style="float: right">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                <li class="nav-item dropdown">
+                                                    <a href="Contact-us.html"><i class="fa fa-envelope-o adminpro-chat-pro"
+                              aria-hidden="true">Contact Us</i><span class="indicator-ms"></span></a>
+                                                </li>
+                                                <li>
+                                                    <div role="menu" class="notification-author dropdown-menu animated zoomIn"></div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                        <i class="fa fa-user adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
+                                                        <span class="admin-name">More options</span>
+                                                        <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
+                                                    </a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li>
+                                                            <a href="login.html" id="logout-btn" s><span class="fa fa-lock author-log-ic"></span>Log
+                                Out</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="mobile-menu-nav">
+                                        <li>
+                                            <a data-toggle="collapse" data-target="#Charts" href="#">Home
+                        <span class="admin-project-icon adminpro-icon adminpro-down-arrow"></span></a>
+                                            <ul class="collapse dropdown-header-top">
+                                                <li><a href="dashboard.html">Dashboard </a></li>
+                                                <li><a href="certificate.html">Certificate</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+            <div class="breadcome-area" style="padding-top: 20px; color: white; padding-bottom: 20px">
+                <div class="container-fluid" >
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="sparkline12-list">
+                                <div class="sparkline12-hd">
+                                    <div class="main-sparkline12-hd" style="overflow-x: auto">                                        
+                                        <div class="box">
+                                            <a class="button" href="#popup1">Create Event</a>
+                                        </div>
+
+                                       <table role="table" class="table table-bordered center" id="tbval1">
+                                                        <thead id="tbval" style="color: #03fcdb">
+                                                            <tr>
+                                                                <th>Sr No.</th>
+
+                                                                <th>Event Name</th>
+                                                                <th>List of feedbacks</th>
+                                                                <th>Update</th>
+                                                                <th>Delete</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="data" style="color: #89eb34">
+                                                            <tr style="color: #89eb34">
+                                                                <td>1</td>
+                                                                 <td>ABC</td>
+                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
+                                                                                    class="fa adminpro-checked-pro"
+                                                                                    aria-hidden="true"></i>
+                                                                                Get feedback
+                                                                            </button>
+                                                                        </td>
+                                                                        <td> <button id="myBtn" type="button" class="btn btn-custon-two btn-warning"><i
+                                                                                    class="fa  adminpro-warning-danger"
+                                                                                    aria-hidden="true"></i>
+                                                                                Update
+                                                                            </button>
+                                                                        </td>
+                                                                        <td>
+                                                                                <button type="button" class="btn btn-custon-rounded-three btn-danger">Delete</button></td>
+                                                            </tr>
+                                                            <tr style="color: #89eb34">
+                                                                <td>2</td>
+                                                                 <td>ABC</td>
+                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
+                                                                                    class="fa adminpro-checked-pro"
+                                                                                    aria-hidden="true"></i>
+                                                                                Get feedback
+                                                                            </button>
+                                                                        </td>
+                                                                        <td> <button id="myBtn" type="button" class="btn btn-custon-two btn-warning"><i
+                                                                                    class="fa  adminpro-warning-danger"
+                                                                                    aria-hidden="true"></i>
+                                                                                Update
+                                                                            </button>
+                                                                        </td>
+                                                                        <td><button type="button" class="btn btn-custon-rounded-three btn-danger">Delete</button></td>
+                                                            </tr>
+                                                            <tr style="color: #89eb34">
+                                                                <td>3</td>
+                                                                <td>ABC</td>
+                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
+                                                                                    class="fa adminpro-checked-pro"
+                                                                                    aria-hidden="true"></i>
+                                                                                Get feedback
+                                                                            </button>
+                                                                        </td>
+                                                                        <td> <button id="myBtn" type="button" class="btn btn-custon-two btn-warning"><i
+                                                                                    class="fa  adminpro-warning-danger"
+                                                                                    aria-hidden="true"></i>
+                                                                                Update
+                                                                            </button>
+                                                                        </td>
+                                                                        <td><button type="button" class="btn btn-custon-rounded-three btn-danger">Delete</button></td>
+                                                            </tr>
+                                                            <tr style="color: #89eb34">
+                                                                <td>4</td>
+                                                                 <td>ABC</td>
+                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
+                                                                                    class="fa adminpro-checked-pro"
+                                                                                    aria-hidden="true"></i>
+                                                                                Get feedback
+                                                                            </button>
+                                                                        </td>
+                                                                        <td> <button id="myBtn" type="button" class="btn btn-custon-two btn-warning"><i
+                                                                                    class="fa  adminpro-warning-danger"
+                                                                                    aria-hidden="true"></i>
+                                                                                Update
+                                                                            </button>
+                                                                        </td>
+                                                                        <td><button type="button" class="btn btn-custon-rounded-three btn-danger">Delete</button></td>
+                                                            </tr>
+                                                             <tr style="color: #89eb34">
+                                                                <td>5</td>
+                                                                 <td>ABC</td>
+                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
+                                                                                    class="fa adminpro-checked-pro"
+                                                                                    aria-hidden="true"></i>
+                                                                                Get feedback
+                                                                            </button>
+                                                                        </td>
+                                                                        <td> <button id="myBtn" type="button" class="btn btn-custon-two btn-warning"><i
+                                                                                    class="fa  adminpro-warning-danger"
+                                                                                    aria-hidden="true"></i>
+                                                                                Update
+                                                                            </button>
+                                                                        </td>
+                                                                        <td><button type="button" class="btn btn-custon-rounded-three btn-danger">Delete</button></td>
+                                                            </tr>
+                                                             <tr style="color: #89eb34">
+                                                                <td>6</td>
+                                                                 <td>ABC</td>
+                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
+                                                                                    class="fa adminpro-checked-pro"
+                                                                                    aria-hidden="true"></i>
+                                                                                Get feedback
+                                                                            </button>
+                                                                        </td>
+                                                                        <td> <button id="myBtn" type="button" class="btn btn-custon-two btn-warning"><i
+                                                                                    class="fa  adminpro-warning-danger"
+                                                                                    aria-hidden="true"></i>
+                                                                                Update
+                                                                            </button>
+                                                                        </td>
+                                                                        <td><button type="button" class="btn btn-custon-rounded-three btn-danger">Delete</button></td>
+                                                            </tr>
+                                                             <tr style="color: #89eb34">
+                                                                <td>7</td>
+                                                                 <td>ABC</td>
+                                                                        <td> <button type="button" class="btn btn-custon-two btn-success"><i
+                                                                                    class="fa adminpro-checked-pro"
+                                                                                    aria-hidden="true"></i>
+                                                                                Get feedback
+                                                                            </button>
+                                                                        </td>
+                                                                        <td> <button id="myBtn" type="button" class="btn btn-custon-two btn-warning"><i
+                                                                                    class="fa  adminpro-warning-danger"
+                                                                                    aria-hidden="true"></i>
+                                                                                Update
+                                                                            </button>
+                                                                        </td>
+                                                                        <td><button type="button" class="btn btn-custon-rounded-three btn-danger">Delete</button></td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+<!-- Update Modal Starts -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Event</h2>
+    </div>
+    <div class="modal-body">
+      
+     <h4 style="color: #34f7cd">Organisation</h4>
+      <p contenteditable="true">ABC</p>
+      <h4 style="color: #34f7cd">Event Name</h4>
+      <p contenteditable="true">Webinar</p>
+      <h4 style="color: #34f7cd">Date &amp time</h4>
+      <p contenteditable="true">XX/XX/XXXX AA:AA:AA</p>
+      <h4 style="color: #34f7cd">Event Description</h4>
+      <p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="modal-footer">
+      <h3> <label class="btn btn-primary img-cropper-cp">
+                                                        <input type="submit" name="submit" class="hide"
+                                                            id="confirmation" />
+                                                        Submit
+                                                    </label></h3>
+    </div>
+  </div>
+
+</div>
+<!-- Update Modal Ends-->
+
+<!--create event modal starts-->
+
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Event</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <h4 style="color: #34f7cd">Organisation</h4>
+       <input type="text" class="form-control" placeholder="Organisation"><br>
+      <h4 style="color: #34f7cd">Event Name</h4>
+    <input type="text" class="form-control" placeholder="Event Name"><br>
+      <h4 style="color: #34f7cd">Date &amp time</h4>
+       <input type="text" class="form-control" placeholder="XX/XX/XXXX AA:AA:AA"><br>
+      <h4 style="color: #34f7cd">Event Description</h4>
+     
+<textarea class="form-control" type="text"style="width: 100%;height: 40%;background-color: #1b2a47"></textarea>
+     <br>
+    <div class="modal-footer">
+      <h3> <label class="btn btn-primary img-cropper-cp">
+                                                        <input type="submit" name="submit" class="hide"
+                                                            id="confirmation" />
+                                                        Submit
+                                                    </label></h3>
+    </div>
+  </div>
+</div>
+
+<!-- create event modal ends-->
+                                    </div>
+                                </div>
+                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Basic Form End-->
+            <div class="footer-copyright-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer-copy-right">
+                                <p>
+                                    Copyright © 2020 | Designed with
+                                    <i class="fa fa-heart" aria-hidden="true"></i> by Team CYBORG | Template from
+                                    <a href="https://colorlib.com/wp/templates/" style="color: inherit">Colorlib</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--js code for update event modal-->
+<script>
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    <!-- jquery ============================================ -->
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS ============================================ -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- wow JS   ============================================ -->
+    <script src="../assets/js/wow.min.js"></script>
+    <!-- price-slider JS ============================================ -->
+    <script src="../assets/js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS   ============================================ -->
+    <script src="../assets/js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS    ============================================ -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!-- sticky JS        ============================================ -->
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <!-- scrollUp JS        ============================================ -->
+    <script src="../assets/js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS ============================================ -->
+    <script src="../assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../assets/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS ============================================ -->
+    <script src="../assets/js/metisMenu/metisMenu.min.js"></script>
+    <script src="../assets/js/metisMenu/metisMenu-active.js"></script>
+    <!-- tab JS ============================================ -->
+    <script src="../assets/js/tab.js"></script>
+    <!-- icheck JS ============================================ -->
+    <script src="../assets/js/icheck/icheck.min.js"></script>
+    <script src="../assets/js/icheck/icheck-active.js"></script>
+    <!-- plugins JS ============================================ -->
+    <script src="../assets/js/plugins.js"></script>
+    <!-- main JS ============================================ -->
+    <script src="../assets/js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="../assets/js/ajax/check_login.js"></script>
+    <script src="../assets/js/ajax/register.js"></script>
+    <script src="../assets/js/ajax/value.js"></script>
+
+    <script src="../assets/js/ajax/logout.js"></script>
+</body>
+
+</html>
