@@ -8,6 +8,8 @@
 
 End-to-end application for Mass certificate generation 
 
+Get an overview of workflow using [codesee map](https://app.codesee.io/maps/public/2b063a60-235a-11ec-9000-0db11fbd1f1b)
+
 
 ## 🤝 HOW TO CONTRIBUTE?
 
