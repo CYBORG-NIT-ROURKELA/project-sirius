@@ -1,15 +1,16 @@
 ![image](https://user-images.githubusercontent.com/35392585/95647461-44a31f00-0aed-11eb-95b6-4c3f20654fb4.png)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # PROJECT SIRIUS
 
-End-to-end application for Mass certificate generation 
+End-to-end application for Mass certificate generation
 
 Get an overview of workflow using [codesee map](https://app.codesee.io/maps/public/2b063a60-235a-11ec-9000-0db11fbd1f1b)
-
 
 ## 🤝 HOW TO CONTRIBUTE?
 
@@ -17,20 +18,26 @@ Get an overview of workflow using [codesee map](https://app.codesee.io/maps/publ
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 - Find an Issue or Create your own Issues!
-- Wait for the admin's approval comment on the issue 
-- Fork the Repository and create a Branch for any Issue by following the branch creation rule.
+- Wait for the admin's approval comment on the issue
+- Fork the Repository and create a Branch for any Issue by following the [branch creation rule](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/blob/master/CONTRIBUTING.md#branch-creation-rule).
 - Work on the issue.
 - Create a Pull Request (from your branch to the main repository master branch) which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this issue is all about.
 
-Go through the [CONTRIBUTION](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/blob/master/CODE_OF_CONDUCT.md) for more details
+Go through the [CONTRIBUTING GUIDELINES](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/blob/master/CONTRIBUTING.md) to know more about how you can start contributing.
+Please abide by the [CODE_OF_CONDUCT](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/blob/master/CODE_OF_CONDUCT.md)
 
 ---
+
 ## 💻 PROJECT SETUP (FOR DEVELOPMENT)
-* Clone the repo using `git clone https://github.com/CYBORG-NIT-ROURKELA/project-sirius`
-* Run `git fetch`
-* Checkout to your specific branch using `git checkout -b YOUR_BRANCH_NAME`
-* Start development
+
+<!-- ### PREREQUISITES -->
+
+- Clone the repo using `git clone https://github.com/YOUR-USERNAME/project-sirius`
+- Run `git fetch`
+- Checkout to your specific branch using `git checkout -b YOUR_BRANCH_NAME`
+- Start development
+
 ---
 
 ## ⭐ IMPORTANT LINKS TO GET STARTED?
@@ -45,6 +52,9 @@ You can go through the following links to know more about using Git and GitHub.
 - [About Git](https://docs.github.com/en/github/using-git)
 - [GitHub Commits](https://docs.github.com/en/github/committing-changes-to-your-project)
 
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/CYBORG-NIT-ROURKELA/project-sirius/blob/master/LICENSE) for more information
 
 ## Contributors ✨
 
@@ -65,6 +75,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
