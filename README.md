@@ -1,3 +1,4 @@
+
 ![image](https://user-images.githubusercontent.com/35392585/95647461-44a31f00-0aed-11eb-95b6-4c3f20654fb4.png)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -32,7 +33,7 @@ Please abide by the [CODE_OF_CONDUCT](https://github.com/CYBORG-NIT-ROURKELA/pro
 ## 💻 PROJECT SETUP (FOR DEVELOPMENT)
 
 <!-- ### PREREQUISITES -->
-
+- Here is a [Setup Guide](./SETUP.md) for the project
 - Clone the repo using `git clone https://github.com/YOUR-USERNAME/project-sirius`
 - Run `git fetch`
 - Checkout to your specific branch using `git checkout -b YOUR_BRANCH_NAME`
